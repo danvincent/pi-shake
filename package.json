@@ -1,0 +1,23 @@
+{
+  "name": "pi-shake",
+  "version": "0.1.0",
+  "description": "Context-shake plugin for Pi — reduce context by eliding old tool outputs and large blocks",
+  "type": "module",
+  "pi": {
+    "extensions": ["./extensions/shake.ts"]
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx --test test/**/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
